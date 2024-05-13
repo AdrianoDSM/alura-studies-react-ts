@@ -3,7 +3,7 @@ import Button from "../button";
 import style from './Form.module.scss'
 
 class Form extends React.Component {
-    render(): React.ReactNode {
+    render() {
         return (
             <form className={style.novaTarefa}>
                 <div className={style.inputContainer}>
@@ -32,7 +32,9 @@ class Form extends React.Component {
                         required
                     />
                 </div>
-                <Button />
+                <Button>
+                    Adicionar
+                </Button>
             </form>
         )
     }
